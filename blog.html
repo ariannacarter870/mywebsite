@@ -1,14 +1,176 @@
 <!DOCTYPE html>
-<htm>
+<html>
     <head>
-        <title> Arianna's place of desire's </title>
-        <link rel="stylesheet" href="Styles.css"
+        <title> 
+       Arianna's place of desire's 
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     </head>
     <body>
-        
-   <h1>This a image</h1>
-    <img src="images/apple.jfif">
-    
+      <div>
+   <h1>Anime through a pretty girl eyes </h1>
+   <hr>
+   </div>
+  <div id ="navbar">
+      <a href="newpage.html">animes </a>
+       
+  </div>
+<div class="slideshow-container">
 
- </body>   
-</html>>
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/pics.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="images/newpic.jpg">2 / 3</div>
+    <img src="images/helpme">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/nanapic" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+  <div>
+   <ol>
+   <li>Vampire Knight</li> 
+   <li>Naruto</li>
+   <li>hunter x hunter </li>  
+   <li>Nana</li>
+   </ol>
+   </div>
+   
+  <br>
+   
+   
+ 
+ 
+    <br>
+    <h2 class="lady">Vampire Knight </h2>
+    <img src="images/pics.jpg "> <p>
+        Vampire knight is a Amazing anime. When i first got into Anime this was one of the first ones i chose. This anime feels every girl dream of 2 beautiful boys fighting over a girl with an unexpected twist.
+        
+    </p>
+   
+ <Br>
+    <a href="https://www.go90.com/shows/7YyzjFUJBgi?tab=related_shows">Vampire Knight </a>
+    
+    <h3 class="lady">Naruto</h3>
+          
+     
+      <img src="images/helpme">
+     <br>
+     <p>NARUTO IS THE GREATEST OF ALL TIME. Thier is no anime better than Naruto. Naruto is a anime that applys to the real world.This a story about a outcast who is giving a
+         
+     </p>
+     <a href="http://www.crunchyroll.com/naruto">Naruto </a>
+     
+     <h4 class="lady">Nana</h4>
+     <img src="images/nanapic">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     
+ </body>  
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
